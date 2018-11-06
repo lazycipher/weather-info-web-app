@@ -32,6 +32,6 @@ app.post('/', function (req, res) {
     });
   })  
 app.listen(0, function () {
-  console.log('Weather app listening on ' + app.address().port );
+  console.log('Weather app listening on ');
 })
 
