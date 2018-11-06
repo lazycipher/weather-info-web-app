@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 
 const apiKey = "f522ecab54f8aca7156b4612359d8fa4";
+var port = process.env.PORT || 8080;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -31,7 +32,7 @@ app.post('/', function (req, res) {
       }
     });
   })  
-app.listen(0, function () {
-  console.log('Weather app listening on ');
+app.listen(port, function () {
+  console.log('Weather app listening on ' + port);
 })
 
